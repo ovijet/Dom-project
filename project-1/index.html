@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom porject</title>
-    <script src="apps.js" ></script>
+    <script src="apps.js"></script>
     <style>
       * {
         margin: 0;
@@ -13,27 +13,39 @@
         box-sizing: border-box;
       }
       body {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
+        display: grid;
         height: 100vh;
+        position: relative;
+        /* place-content:center; */
+        background-color: black;
         color: aliceblue;
       }
+
       .container {
+        /* top: -50%;
+        left: -50%;
+        transform: translate(-50%, -50%); */
         text-align: center;
         text-shadow: 5px 5px 9px #e1e6eb;
-        /* height: 100vh; */
+        /* margin-top: 200px; */
         text-align: center;
+      }
+      .container h1 {
+        margin-top: 200px;
       }
       #c-btn {
         padding: 10px 20px;
         margin-top: 20px;
         font-size: 17px;
-        color: aliceblue;
+        color: #d5dff1;
+        border: 1px solid black;
         border-radius: 5px;
         /* border: none; */
+        background-color:transparent;
+      }
+      #c-btn:focus {
         background-color: red;
+        box-shadow: 0 4px 7px blueviolet;
       }
     </style>
   </head>
